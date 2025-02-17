@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="OpenXLSX.Documentation"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\OpenXLSX\;CMake Files\lib\OpenXLSX\OpenXLSX\;CMake Files\lib\OpenXLSX\Documentation\;CMake Files\lib\OpenXLSX\Examples\;CMake Files\lib\OpenXLSX\Tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Documentation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Documentation/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Documentation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Documentation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Documentation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\OpenXLSX\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/OpenXLSXConfig.cmake">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\OpenXLSX\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Documentation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\Documentation\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\Examples\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\Tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

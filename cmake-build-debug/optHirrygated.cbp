@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="optHirrygated"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\OpenXLSX\;CMake Files\lib\OpenXLSX\OpenXLSX\;CMake Files\lib\OpenXLSX\Documentation\;CMake Files\lib\OpenXLSX\Examples\;CMake Files\lib\OpenXLSX\Tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="optHirrygated">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/optHirrygated" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/include"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/include"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 optHirrygated"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="optHirrygated/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/optHirrygated" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/include"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/include"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 optHirrygated/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OpenXLSX">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/libOpenXLSXd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add option="-DCHARCONV_ENABLED"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/external/zippy"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/external/pugixml"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/Makefile&quot;  VERBOSE=1 OpenXLSX"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OpenXLSX/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/libOpenXLSXd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add option="-DCHARCONV_ENABLED"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/external/zippy"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/external/pugixml"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/Makefile&quot;  VERBOSE=1 OpenXLSX/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo1">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo1"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo1/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo1/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo2">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo2"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo2/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo2/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo3">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo3"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo3/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo3/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo4">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo4"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo4/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo4/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo5">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo5"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo5/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo5/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo6">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo6"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo6/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo6/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo7">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo7"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo7/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo7/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo8">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo8"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo8/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo8/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo9">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo9" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo9"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo9/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo9" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo9/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo10">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo10"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Demo10/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/Demo10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 Demo10/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OpenXLSXTests">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/OpenXLSXTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/catch"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/Makefile&quot;  VERBOSE=1 OpenXLSXTests"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OpenXLSXTests/fast">
+				<Option output="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output/OpenXLSXTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/output"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENXLSX_STATIC_DEFINE"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX"/>
+					<Add directory="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/catch"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/Makefile&quot;  VERBOSE=1 OpenXLSXTests/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo1.cpp">
+			<Option target="Demo1"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo10.cpp">
+			<Option target="Demo10"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo2.cpp">
+			<Option target="Demo2"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo3.cpp">
+			<Option target="Demo3"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo4.cpp">
+			<Option target="Demo4"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo5.cpp">
+			<Option target="Demo5"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo6.cpp">
+			<Option target="Demo6"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo7.cpp">
+			<Option target="Demo7"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo8.cpp">
+			<Option target="Demo8"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/Demo9.cpp">
+			<Option target="Demo9"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLCell.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLCellIterator.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLCellRange.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLCellReference.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLCellValue.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLColor.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLColumn.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLComments.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLContentTypes.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLDateTime.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLDocument.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLDrawing.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLFormula.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLMergeCells.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLProperties.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLRelationships.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLRow.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLRowData.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLSharedStrings.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLSheet.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLStyles.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLTables.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLWorkbook.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLXmlData.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLXmlFile.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLXmlParser.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/sources/XLZipArchive.cpp">
+			<Option target="OpenXLSX"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/main.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLCell.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLCellRange.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLCellReference.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLCellValue.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLCellValueProxy.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLColor.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLDateTime.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLDocument.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLFormula.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLRow.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/testXLSheet.cpp">
+			<Option target="OpenXLSXTests"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/src/Instance.cpp">
+			<Option target="optHirrygated"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/src/Measurer.cpp">
+			<Option target="optHirrygated"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/src/Solution.cpp">
+			<Option target="optHirrygated"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/src/main.cpp">
+			<Option target="optHirrygated"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\OpenXLSX\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/OpenXLSXConfig.cmake">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\OpenXLSX\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Documentation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\Documentation\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\Examples\"/>
+		</Unit>
+		<Unit filename="/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/Tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\OpenXLSX\Tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,165 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/OpenXLSX/OpenXLSX/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 287,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 298,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 324,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/OpenXLSX/headers",
+			"paths" : 
+			[
+				"cmake-build-debug/lib/OpenXLSX/OpenXLSX/OpenXLSX-Exports.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/OpenXLSX/headers",
+			"paths" : 
+			[
+				"lib/OpenXLSX/OpenXLSX/headers/IZipArchive.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLCell.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLCellIterator.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLCellRange.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLCellReference.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLCellValue.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLColor.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLColumn.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLCommandQuery.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLComments.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLConstants.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLContentTypes.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLDateTime.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLDocument.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLDrawing.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLException.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLFormula.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLIterator.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLMergeCells.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLProperties.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLRelationships.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLRow.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLRowData.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLSharedStrings.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLSheet.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLStyles.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLTables.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLWorkbook.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLXmlData.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLXmlFile.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLXmlParser.hpp",
+				"lib/OpenXLSX/OpenXLSX/headers/XLZipArchive.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/OpenXLSX",
+			"paths" : 
+			[
+				"lib/OpenXLSX/OpenXLSX/OpenXLSX.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "lib",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"output/libOpenXLSXd.a"
+			],
+			"targetId" : "OpenXLSX::@8b02f60756ed76f535d4",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/OpenXLSX",
+			"paths" : 
+			[
+				"lib/OpenXLSX/OpenXLSX/OpenXLSXConfig.cmake",
+				"cmake-build-debug/lib/OpenXLSX/OpenXLSX/OpenXLSX/OpenXLSXConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/OpenXLSX",
+			"exportName" : "OpenXLSXTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "OpenXLSX::@8b02f60756ed76f535d4",
+					"index" : 10
+				}
+			],
+			"paths" : 
+			[
+				"lib/OpenXLSX/OpenXLSX/CMakeFiles/Export/c72cc94553a1a0c9b05f75dae42fb1d7/OpenXLSXTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/OpenXLSX/OpenXLSX",
+		"source" : "lib/OpenXLSX/OpenXLSX"
+	}
+}
