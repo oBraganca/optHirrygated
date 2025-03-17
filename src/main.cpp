@@ -2,6 +2,7 @@
 #include "../include/Instance.hpp"
 #include "../include/Measurer.hpp"
 #include "../include/Solution.hpp"
+#include "../include/ConstructiveHeuristic.hpp"
 
 using namespace std;
 using namespace opthirrygated;
@@ -42,7 +43,23 @@ int main() {
 
     cout << endl;
     Measurer measurer(instance);
-    cout << "Solution Cost: R$" << measurer.evaluate(solution)<<endl;
+    cout << "Solution Cost: R$" << measurer.evaluate(solution)<<endl << endl;
+    cout << "---------------------------------------------------------------"<<endl;
+    cout << "Heuristics Evaluation:"<<endl;
+
+    ConstructiveHeuristic constructiveHeuristic(instance);
+    solution = constructiveHeuristic.execute();
+
+    cout << "\tTotal day evaluated: " << instance.getCicle().size() <<endl;
+    cout << "\tSolution Cost: R$" << measurer.evaluate(solution)<<endl;
+    cout << "\tSolution Output: [ ";
+    for (float val : solution.getSolution()) {
+        cout << val << " ";
+    }
+    cout<<"]"<<endl;
+
+    cout << "---------------------------------------------------------------"<<endl;
+
 
 
     // You can add further tests here to see if the methods are working properly.

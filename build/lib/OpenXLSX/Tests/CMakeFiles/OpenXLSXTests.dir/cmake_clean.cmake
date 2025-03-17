@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../../../output/OpenXLSXTests"
   "../../../output/OpenXLSXTests.pdb"
+  "CMakeFiles/OpenXLSXTests.dir/link.d"
   "CMakeFiles/OpenXLSXTests.dir/main.cpp.o"
   "CMakeFiles/OpenXLSXTests.dir/main.cpp.o.d"
   "CMakeFiles/OpenXLSXTests.dir/testXLCell.cpp.o"

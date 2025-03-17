@@ -1,4 +1,4 @@
-# Install script for directory: /home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX
+# Install script for directory: /home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -37,64 +37,64 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
+# Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/OpenXLSX/headers" TYPE FILE FILES "/home/obraganca/Documentos/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/OpenXLSX-Exports.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/OpenXLSX/headers" TYPE FILE FILES "/home/obraganca/Documents/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/OpenXLSX-Exports.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/OpenXLSX/headers" TYPE FILE FILES
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/IZipArchive.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCell.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCellIterator.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCellRange.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCellReference.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCellValue.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLColor.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLColumn.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCommandQuery.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLComments.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLConstants.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLContentTypes.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLDateTime.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLDocument.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLDrawing.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLException.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLFormula.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLIterator.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLMergeCells.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLProperties.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLRelationships.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLRow.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLRowData.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLSharedStrings.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLSheet.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLStyles.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLTables.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLWorkbook.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLXmlData.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLXmlFile.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLXmlParser.hpp"
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLZipArchive.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/IZipArchive.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCell.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCellIterator.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCellRange.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCellReference.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCellValue.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLColor.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLColumn.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLCommandQuery.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLComments.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLConstants.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLContentTypes.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLDateTime.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLDocument.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLDrawing.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLException.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLFormula.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLIterator.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLMergeCells.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLProperties.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLRelationships.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLRow.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLRowData.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLSharedStrings.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLSheet.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLStyles.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLTables.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLWorkbook.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLXmlData.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLXmlFile.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLXmlParser.hpp"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/headers/XLZipArchive.hpp"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/OpenXLSX" TYPE FILE FILES "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/OpenXLSX.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/OpenXLSX" TYPE FILE FILES "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/OpenXLSX.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "lib" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/obraganca/Documentos/IC/optHirrygated/build/output/libOpenXLSX.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/obraganca/Documents/IC/optHirrygated/build/output/libOpenXLSX.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenXLSX" TYPE FILE FILES
-    "/home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/OpenXLSXConfig.cmake"
-    "/home/obraganca/Documentos/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/OpenXLSX/OpenXLSXConfigVersion.cmake"
+    "/home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX/OpenXLSX/OpenXLSXConfig.cmake"
+    "/home/obraganca/Documents/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/OpenXLSX/OpenXLSXConfigVersion.cmake"
     )
 endif()
 
@@ -102,7 +102,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenXLSX/OpenXLSXTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenXLSX/OpenXLSXTargets.cmake"
-         "/home/obraganca/Documentos/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/CMakeFiles/Export/c72cc94553a1a0c9b05f75dae42fb1d7/OpenXLSXTargets.cmake")
+         "/home/obraganca/Documents/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/CMakeFiles/Export/c72cc94553a1a0c9b05f75dae42fb1d7/OpenXLSXTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenXLSX/OpenXLSXTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -115,9 +115,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenXLSX" TYPE FILE FILES "/home/obraganca/Documentos/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/CMakeFiles/Export/c72cc94553a1a0c9b05f75dae42fb1d7/OpenXLSXTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenXLSX" TYPE FILE FILES "/home/obraganca/Documents/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/CMakeFiles/Export/c72cc94553a1a0c9b05f75dae42fb1d7/OpenXLSXTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenXLSX" TYPE FILE FILES "/home/obraganca/Documentos/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/CMakeFiles/Export/c72cc94553a1a0c9b05f75dae42fb1d7/OpenXLSXTargets-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenXLSX" TYPE FILE FILES "/home/obraganca/Documents/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/CMakeFiles/Export/c72cc94553a1a0c9b05f75dae42fb1d7/OpenXLSXTargets-noconfig.cmake")
   endif()
 endif()
 
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+if(CMAKE_INSTALL_LOCAL_ONLY)
+  file(WRITE "/home/obraganca/Documents/IC/optHirrygated/build/lib/OpenXLSX/OpenXLSX/install_local_manifest.txt"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()
