@@ -12,7 +12,9 @@ namespace opthirrygated{
         Instance& inst;
     public:
         ConstructiveHeuristic(Instance &instance);
-        virtual Solution execute();
+        virtual Solution executeA();
+        virtual Solution executeB();
+        virtual Solution executeC();
     };
 }
 

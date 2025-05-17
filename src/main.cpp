@@ -3,6 +3,9 @@
 #include "../include/Measurer.hpp"
 #include "../include/Solution.hpp"
 #include "../include/ConstructiveHeuristic.hpp"
+#include "../include/Exact.hpp"
+#include "../include/SolutionProcessor.hpp"
+#include "../include/CSVExporter.hpp"
 
 using namespace std;
 using namespace opthirrygated;
@@ -10,45 +13,35 @@ int main() {
     // Create an Instance object
     Instance instance("../datasource/planilha.xlsx");
 
-    // Access and print member variables using getters
-    cout << "Perc IDs: ";
-    for (int val : instance.getPerc()) {
-        cout << val << " ";
-    }
-    cout<<endl;
-    // Access and print member variables using getters
-    cout << "Lamp: ";
-    for (float val : instance.getLamp()) {
-        cout << val << " ";
-    }
-    cout << endl;
-    // Access and print member variables using getters
-    cout << "Perc Cost: ";
-    for (float val : instance.getCost()) {
-        cout << val << " ";
-    }
-    cout << endl;
 
-
-    vector<int> v = {3,1,0,0,8,3,1,0};
+    //Running exact method
+    Solution exactSol;
+    Exact exato(instance, 3600);    
+    exato.solve();
+    if(exato.getStatus() == status::SOLUTIONFOUND)    
+    {
+        cout << "Solucao encontrada!"<<endl;
+        cout << "FO: " << exato.getFO() << endl;
+        exato.showSolution();
+        exactSol = exato.getSolution();
+    }
+    else
+    {
+        cout << "Verificar!!!" <<endl;
+    }
 
     Solution solution;
-    solution.setSolution(v);
 
-    cout << "Solution Output: [ ";
-    for (float val : solution.getSolution()) {
-        cout << val << " ";
-    }
-    cout<<"]";
 
     cout << endl;
     Measurer measurer(instance);
-    cout << "Solution Cost: R$" << measurer.evaluate(solution)<<endl << endl;
+    cout << "---------------------------------------------------------------"<<endl;
+    cout << "Solution Cost (Exato): R$" << measurer.evaluate(exactSol)<<endl << endl;
     cout << "---------------------------------------------------------------"<<endl;
     cout << "Heuristics Evaluation:"<<endl;
 
     ConstructiveHeuristic constructiveHeuristic(instance);
-    solution = constructiveHeuristic.execute();
+    solution = constructiveHeuristic.executeA();
 
     cout << "\tTotal day evaluated: " << instance.getCicle().size() <<endl;
     cout << "\tSolution Cost: R$" << measurer.evaluate(solution)<<endl;
@@ -58,10 +51,11 @@ int main() {
     }
     cout<<"]"<<endl;
 
+
+	CSVExporter exporter;
+	SolutionProcessor sp;
+	exporter.exportToCSV(sp.processSolution(instance, solution), "result.csv");
+
     cout << "---------------------------------------------------------------"<<endl;
-
-
-
-    // You can add further tests here to see if the methods are working properly.
     return 0;
 }

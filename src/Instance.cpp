@@ -27,16 +27,16 @@ void Instance::exec() {
         XLDocument doc;
         doc.open(getPath());
         auto wks = doc.workbook().worksheet("ciclo");
-        setCicle(loadColumn<int>(wks, "A", 2, 121));
+        setCicle(loadColumn<float>(wks, "A", 2, 121));
         setPrec(loadColumn<float>(wks, "B", 2, 121));
         setEtc(loadColumn<float>(wks, "C", 2, 121));
         setCad(loadColumn<float>(wks, "D", 2, 121));
         setLc(loadColumn<float>(wks, "E", 2, 121));
 
         wks = doc.workbook().worksheet("perc");
-        setPerc(loadColumn<int>(wks, "E", 3, 11));
-        setCost(loadColumn<float>(wks, "D",3 , 11));
-        setLamp(loadColumn<float>(wks, "C", 3, 11));
+        setPerc(loadColumn<int>(wks, "E", 2, 12));
+        setCost(loadColumn<float>(wks, "D",2 , 12));
+        setLamp(loadColumn<float>(wks, "C", 2, 12));
 
 
 

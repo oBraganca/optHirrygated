@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/Demo2.dir/link.d CMakeFiles/Demo2.dir/Demo2.cpp.o -o ../../../output/Demo2  ../../../output/libOpenXLSX.a
+/usr/bin/c++ CMakeFiles/Demo2.dir/Demo2.cpp.o -o ../../../output/Demo2  ../../../output/libOpenXLSX.a 

@@ -11,7 +11,7 @@ namespace opthirrygated {
     class Instance {
     private:
 
-        vector<int> cicle;
+        vector<float> cicle;
         vector<int> perc;
         vector<float> cost;
         vector<float> lamp;
@@ -28,8 +28,8 @@ namespace opthirrygated {
         virtual void exec();
 
         // Getter and Setter for cicle
-        vector<int> getCicle() const { return cicle; }
-        void setCicle(const vector<int>& newCicle) { cicle = newCicle; }
+        vector<float> getCicle() const { return cicle; }
+        void setCicle(const vector<float>& newCicle) { cicle = newCicle; }
 
         // Getter and Setter for perc
         vector<int> getPerc() const { return perc; }
