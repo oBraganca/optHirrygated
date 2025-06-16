@@ -295,6 +295,15 @@ status Exact::getStatus()
 	}
 }
 
+void Exact::showVars()
+{
+	for(unsigned int c=0; c< p.getCicle().size(); c++)
+	{
+		printf("D[%d] - Ai: %.2f Af: %.2f Lc: %.2f\n",c,  pirr.getValue(adi[c]), pirr.getValue(adf[c]), p.getLc().at(c));
+	}
+
+}
+
 
 
 #endif //EXACT_CPP_

@@ -48,6 +48,7 @@ namespace opthirrygated {
         void showSolution();
         double getFO();
         Solution getSolution();
+        void showVars();
 
     };
 }

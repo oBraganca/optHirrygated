@@ -158,6 +158,7 @@ CMakeFiles/optHirrygated.dir/src/main.cpp.o: \
  /home/obraganca/Documents/IC/optHirrygated/src/../include/Solution.hpp \
  /home/obraganca/Documents/IC/optHirrygated/src/../include/Solution.hpp \
  /home/obraganca/Documents/IC/optHirrygated/src/../include/ConstructiveHeuristic.hpp \
+ /home/obraganca/Documents/IC/optHirrygated/src/../include/RefinementHeuristic.hpp \
  /home/obraganca/Documents/IC/optHirrygated/src/../include/Exact.hpp \
  /opt/ibm/ILOG/CPLEX_Studio2211/cplex/include/ilcplex/ilocplex.h \
  /opt/ibm/ILOG/CPLEX_Studio2211/concert/include/ilconcert/ilomodel.h \

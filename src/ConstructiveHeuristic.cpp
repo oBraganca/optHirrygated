@@ -1,5 +1,6 @@
 #include "../include/ConstructiveHeuristic.hpp"
 #include "../include/Solution.hpp"
+#include "../include/Measurer.hpp"
 #include <float.h>
 #include <unordered_map>
 
@@ -11,6 +12,7 @@ ConstructiveHeuristic::ConstructiveHeuristic(opthirrygated::Instance &instance) 
 Solution ConstructiveHeuristic::executeA() {
   Solution objSolution;
   vector<int> solution;
+  vector<float> adfSol;
 
   float adi = inst.getCad()[0], adf = 0;
 
@@ -37,15 +39,18 @@ Solution ConstructiveHeuristic::executeA() {
     }
 
     adi = adf;
+    adfSol.push_back(adf);
   }
 
   objSolution.setSolution(std::move(solution));
+  objSolution.setAdfSolution(std::move(adfSol));
   return objSolution;
 }
 
 Solution ConstructiveHeuristic::executeB() {
     Solution objSolution;
     vector<int> solution;
+    vector<float> adfSolution;
 
   float adi = inst.getCad()[0], adf = 0;
 
@@ -85,9 +90,11 @@ Solution ConstructiveHeuristic::executeB() {
     }
 
     adi = adf;
+    adfSolution.push_back(adf);
   }
 
   objSolution.setSolution(std::move(solution));
+  objSolution.setAdfSolution(std::move(adfSolution));
   return objSolution;
 }
 
@@ -96,6 +103,7 @@ Solution ConstructiveHeuristic::executeB() {
 Solution ConstructiveHeuristic::executeC() {
  	Solution objSolution;
 	vector<int> solution;
+    vector<float> adfSol;
 
   	float adi = inst.getCad()[0], adf = 0;
 
@@ -135,8 +143,101 @@ Solution ConstructiveHeuristic::executeC() {
     }
 
     adi = adf;
+    adfSol.push_back(adf);
   }
 
   objSolution.setSolution(std::move(solution));
+  objSolution.setAdfSolution(std::move(adfSol));
   return objSolution;
+}
+Solution ConstructiveHeuristic::executeLookAhead(int lookaheadDepth) {
+    Solution objSolution;
+    vector<int> solution;
+    vector<float> adfSol;
+    Measurer measurer(inst);
+
+    float adi = inst.getCad()[0], adf = 0;
+    size_t numDays = inst.getCicle().size();
+
+    for (size_t day = 0; day < numDays; day++) {
+        float bestScore = FLT_MAX;
+        int bestPerc = -1;
+        float bestAdf = adi;
+
+        for (int perc : inst.getPerc()) {
+            float currAdf = adi - inst.getEtc()[day] + inst.getPrec()[day] + inst.getLamp()[perc];
+
+            if (currAdf >= inst.getLc()[day]) {
+                float currCost = inst.getCost()[perc];
+                float futureCost = measurer.evaluateLookahead(day + 1, currAdf, lookaheadDepth - 1);
+                float totalScore = currCost + futureCost;
+
+                if (totalScore < bestScore) {
+                    bestScore = totalScore;
+                    bestPerc = perc;
+                    bestAdf = currAdf;
+                }
+            }
+        }
+
+        if (bestPerc != -1) {
+            solution.push_back(bestPerc);
+            adf = bestAdf;
+        } else {
+            adf = adi; // fallback
+        }
+
+        adi = adf;
+        adfSol.push_back(adf);
+    }
+
+    objSolution.setSolution(std::move(solution));
+    objSolution.setAdfSolution(std::move(adfSol));
+
+    return objSolution;
+}
+
+
+Solution ConstructiveHeuristic::executeLookAheadBy(int lookaheadDepth, int start, Solution &solution) {
+    Solution objSolution;
+    vector<float> adfSol;
+    Measurer measurer(inst);
+
+    float adi =  start == 0 ? inst.getCad()[0]:solution.getAdfSolutions()[start]-1;
+    float adf = 0;
+    size_t numDays = inst.getCicle().size();
+
+    for (size_t day = start; day < numDays; day++) {
+        float bestScore = measurer.evaluate(solution);
+        int bestPerc = -1;
+        float bestAdf = adi;
+
+        for (int perc : inst.getPerc()) {
+            float currAdf = adi - inst.getEtc()[day] + inst.getPrec()[day] + inst.getLamp()[perc];
+
+            if (currAdf >= inst.getLc()[day]) {
+                float currCost = inst.getCost()[perc];
+                float futureCost = measurer.evaluateLookahead(day + 1, currAdf, lookaheadDepth - 1);
+                float totalScore = currCost + futureCost;
+
+                if (totalScore < bestScore) {
+                    bestScore = totalScore;
+                    bestPerc = perc;
+                    bestAdf = currAdf;
+                }
+            }
+        }
+
+        if (bestPerc != -1) {
+            solution.updateSolution(day,bestPerc);
+            adf = bestAdf;
+        } else {
+            adf = adi; // fallback
+        }
+
+        adi = adf;
+        solution.updateAdfSolution(day, adf);
+
+    }
+    return solution;
 }

@@ -3,6 +3,7 @@
 #include "../include/Measurer.hpp"
 #include "../include/Solution.hpp"
 #include "../include/ConstructiveHeuristic.hpp"
+#include "../include/RefinementHeuristic.hpp"
 #include "../include/Exact.hpp"
 #include "../include/SolutionProcessor.hpp"
 #include "../include/CSVExporter.hpp"
@@ -15,10 +16,11 @@ int main() {
 
 
     //Running exact method
+
     Solution exactSol;
-    Exact exato(instance, 3600);    
+    Exact exato(instance, 3600);
     exato.solve();
-    if(exato.getStatus() == status::SOLUTIONFOUND)    
+    if(exato.getStatus() == status::SOLUTIONFOUND)
     {
         cout << "Solucao encontrada!"<<endl;
         cout << "FO: " << exato.getFO() << endl;
@@ -30,9 +32,13 @@ int main() {
         cout << "Verificar!!!" <<endl;
     }
 
+
+    //CSVExporter exporter;
+    //SolutionProcessor sp;
+    //exporter.exportToCSV(sp.processSolution(instance, exato.getSolution()), "result.csv");
+
+
     Solution solution;
-
-
     cout << endl;
     Measurer measurer(instance);
     cout << "---------------------------------------------------------------"<<endl;
@@ -40,22 +46,66 @@ int main() {
     cout << "---------------------------------------------------------------"<<endl;
     cout << "Heuristics Evaluation:"<<endl;
 
-    ConstructiveHeuristic constructiveHeuristic(instance);
-    solution = constructiveHeuristic.executeA();
-
-    cout << "\tTotal day evaluated: " << instance.getCicle().size() <<endl;
-    cout << "\tSolution Cost: R$" << measurer.evaluate(solution)<<endl;
-    cout << "\tSolution Output: [ ";
-    for (float val : solution.getSolution()) {
+    cout << "Caixa Preta Solution Output: [ ";
+    for (float val : exactSol.getSolution()) {
         cout << val << " ";
     }
     cout<<"]"<<endl;
 
 
-	CSVExporter exporter;
-	SolutionProcessor sp;
-	exporter.exportToCSV(sp.processSolution(instance, solution), "result.csv");
+    cout << "---------------------------------------------------------------"<<endl;
+
+    ConstructiveHeuristic constructiveHeuristic(instance);
+    solution = constructiveHeuristic.executeLookAhead(4);
+
+
+    RefinementHeuristic refinementHeuristic(instance);
+    //solution = refinementHeuristic.executeB(solution);
+    solution = refinementHeuristic.executeSA(solution);
+    cout << measurer.validation(solution);
+
+    cout << "Total day evaluated: " << instance.getCicle().size() <<endl;
+    cout << "Solution Cost: R$" << measurer.evaluate(solution)<<endl;
+    cout << "Solution Output: [ ";
+    for (float val : solution.getSolution()) {
+        cout << val << " ";
+    }
+    cout<<"]"<<endl;
 
     cout << "---------------------------------------------------------------"<<endl;
+
+
+    /*
+    CSVExporter exporter;
+    SolutionProcessor sp;
+    exporter.exportToCSV(sp.processSolution(instance, exactSol), "result.csv");
+
+    Measurer measurer(instance);
+    std::vector<int> validationSolution = {
+        10, 10, 10,  1, 10, 10, 10,  0,  1,  1,
+         0,  1,  1,  1,  1,  1,  1,  1,  1,  1,
+         1,  1,  1,  1,  1,  1,  1,  1,  1,  1,
+         1,  1,  0,  1,  1,  1,  0,  1,  1,  1,
+         1,  1,  1,  1,  1,  1,  1,  1,  1,  1,
+         1,  1,  1,  1,  1, 10,  1,  0, 10,  1,
+        10, 10, 10, 10,  1, 10, 10,  1, 10,  0,
+         0,  0, 10, 10, 10, 10,  1, 10,  1,  1,
+        10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+        10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+        10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+        10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+        10, 10, 10
+    };
+
+    solution.setSolution(validationSolution);
+
+    cout << "Validating the solution exact "<< endl;
+    if (measurer.validation(exactSol)) {
+        cout << "Valid solution" <<endl;
+    }else {
+        cout << "Solution not valid" <<endl;
+    }
+    */
+
     return 0;
 }

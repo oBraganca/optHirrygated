@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/optHirrygated.dir/src/Instance.cpp.o.d"
   "CMakeFiles/optHirrygated.dir/src/Measurer.cpp.o"
   "CMakeFiles/optHirrygated.dir/src/Measurer.cpp.o.d"
+  "CMakeFiles/optHirrygated.dir/src/RefinementHeuristic.cpp.o"
+  "CMakeFiles/optHirrygated.dir/src/RefinementHeuristic.cpp.o.d"
   "CMakeFiles/optHirrygated.dir/src/Solution.cpp.o"
   "CMakeFiles/optHirrygated.dir/src/Solution.cpp.o.d"
   "CMakeFiles/optHirrygated.dir/src/SolutionProcessor.cpp.o"

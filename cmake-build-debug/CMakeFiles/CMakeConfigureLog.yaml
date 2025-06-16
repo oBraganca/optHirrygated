@@ -4,16 +4,16 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.1.0-21-amd64 - x86_64
+      The system is: Linux - 6.1.0-32-amd64 - x86_64
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -28,14 +28,14 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/3.27.0/CompilerIdC/a.out
+        /home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/3.31.6/CompilerIdC/a.out
       
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -50,19 +50,19 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/3.27.0/CompilerIdCXX/a.out
+        /home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/3.31.6/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TnR4C7"
-      binary: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TnR4C7"
+      source: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bWrcrI"
+      binary: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bWrcrI"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TnR4C7'
+        Change Dir: '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bWrcrI'
         
-        Run Build Command(s): /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1fa5/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a1fa5.dir/build.make CMakeFiles/cmTC_a1fa5.dir/build
-        gmake[1]: Entering directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TnR4C7'
-        Building C object CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o -c /opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cffb1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cffb1.dir/build.make CMakeFiles/cmTC_cffb1.dir/build
+        gmake[1]: Entering directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bWrcrI'
+        Building C object CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o -c /snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -87,8 +87,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 12.2.0 (Debian 12.2.0-14) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a1fa5.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a1fa5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -o /tmp/ccz84bCE.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cffb1.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_cffb1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -o /tmp/cc33OyJ4.s
         GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
         
@@ -110,15 +110,14 @@ events:
         warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: cc72d2b9b5048fedc2be9051c917b40b
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a1fa5.dir/'
-         as -v --64 -o CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o /tmp/ccz84bCE.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cffb1.dir/'
+         as -v --64 -o CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o /tmp/cc33OyJ4.s
         GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_a1fa5
-        /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1fa5.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o -o cmTC_a1fa5 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_cffb1
+        /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cffb1.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
@@ -131,17 +130,21 @@ events:
         gcc version 12.2.0 (Debian 12.2.0-14) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a1fa5' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a1fa5.'
-         /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLaUFRe.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a1fa5 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a1fa5' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a1fa5.'
-        gmake[1]: Leaving directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TnR4C7'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cffb1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cffb1.'
+         /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyJzWIh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cffb1 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -v CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 12.2.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyJzWIh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cffb1 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -v CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.40
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cffb1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cffb1.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o -o cmTC_cffb1
+        gmake[1]: Leaving directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bWrcrI'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
@@ -162,19 +165,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TnR4C7']
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bWrcrI']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1fa5/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a1fa5.dir/build.make CMakeFiles/cmTC_a1fa5.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TnR4C7']
-        ignore line: [Building C object CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o -c /opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cffb1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_cffb1.dir/build.make CMakeFiles/cmTC_cffb1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bWrcrI']
+        ignore line: [Building C object CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o -c /snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -184,8 +188,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a1fa5.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a1fa5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -o /tmp/ccz84bCE.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cffb1.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_cffb1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -o /tmp/cc33OyJ4.s]
         ignore line: [GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -207,15 +211,14 @@ events:
         ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: cc72d2b9b5048fedc2be9051c917b40b]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a1fa5.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o /tmp/ccz84bCE.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cffb1.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o /tmp/cc33OyJ4.s]
         ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_a1fa5]
-        ignore line: [/opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1fa5.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o -o cmTC_a1fa5 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_cffb1]
+        ignore line: [/snap/clion/353/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cffb1.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
@@ -228,13 +231,13 @@ events:
         ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a1fa5' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a1fa5.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLaUFRe.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a1fa5 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cffb1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cffb1.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyJzWIh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cffb1 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -v CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccLaUFRe.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccyJzWIh.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -250,7 +253,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a1fa5] ==> ignore
+          arg [cmTC_cffb1] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
@@ -262,7 +265,8 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
-          arg [CMakeFiles/cmTC_a1fa5.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -276,6 +280,9 @@ events:
           arg [--pop-state] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 12.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyJzWIh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cffb1 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -v CMakeFiles/cmTC_cffb1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
@@ -294,31 +301,42 @@ events:
       
       
   -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.40
+  -
     kind: "try_compile-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LioUW1"
-      binary: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LioUW1"
+      source: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0aK02i"
+      binary: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0aK02i"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LioUW1'
+        Change Dir: '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0aK02i'
         
-        Run Build Command(s): /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e1f4/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_6e1f4.dir/build.make CMakeFiles/cmTC_6e1f4.dir/build
-        gmake[1]: Entering directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LioUW1'
-        Building CXX object CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7bc9b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7bc9b.dir/build.make CMakeFiles/cmTC_7bc9b.dir/build
+        gmake[1]: Entering directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0aK02i'
+        Building CXX object CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -328,8 +346,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 12.2.0 (Debian 12.2.0-14) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6e1f4.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6e1f4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -o /tmp/ccRlhub2.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7bc9b.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7bc9b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -o /tmp/cc7KfMFW.s
         GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
         
@@ -355,15 +373,14 @@ events:
         warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 62b090dbbefa50644117a3c13d47369a
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6e1f4.dir/'
-         as -v --64 -o CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccRlhub2.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7bc9b.dir/'
+         as -v --64 -o CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7KfMFW.s
         GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_6e1f4
-        /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e1f4.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6e1f4 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7bc9b
+        /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bc9b.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
@@ -376,17 +393,21 @@ events:
         gcc version 12.2.0 (Debian 12.2.0-14) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6e1f4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6e1f4.'
-         /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHmz0wx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6e1f4 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6e1f4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6e1f4.'
-        gmake[1]: Leaving directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LioUW1'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7bc9b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7bc9b.'
+         /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwQXYUF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7bc9b /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -v CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 12.2.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwQXYUF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7bc9b /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -v CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.40
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7bc9b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7bc9b.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7bc9b
+        gmake[1]: Leaving directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0aK02i'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
@@ -413,19 +434,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LioUW1']
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0aK02i']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e1f4/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6e1f4.dir/build.make CMakeFiles/cmTC_6e1f4.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LioUW1']
-        ignore line: [Building CXX object CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7bc9b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7bc9b.dir/build.make CMakeFiles/cmTC_7bc9b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0aK02i']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -435,8 +457,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6e1f4.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6e1f4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -o /tmp/ccRlhub2.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7bc9b.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7bc9b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -o /tmp/cc7KfMFW.s]
         ignore line: [GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -462,15 +484,14 @@ events:
         ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 62b090dbbefa50644117a3c13d47369a]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6e1f4.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccRlhub2.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7bc9b.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7KfMFW.s]
         ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_6e1f4]
-        ignore line: [/opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e1f4.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6e1f4 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_7bc9b]
+        ignore line: [/snap/clion/353/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bc9b.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
@@ -483,13 +504,13 @@ events:
         ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6e1f4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6e1f4.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHmz0wx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6e1f4 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7bc9b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7bc9b.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwQXYUF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7bc9b /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -v CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccHmz0wx.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccwQXYUF.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -505,7 +526,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_6e1f4] ==> ignore
+          arg [cmTC_7bc9b] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
@@ -517,7 +538,8 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
-          arg [CMakeFiles/cmTC_6e1f4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -527,6 +549,9 @@ events:
           arg [-lgcc] ==> lib [gcc]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 12.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwQXYUF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7bc9b /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -v CMakeFiles/cmTC_7bc9b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
@@ -545,16 +570,26 @@ events:
       
       
   -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.40
+  -
     kind: "try_compile-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
       - "lib/OpenXLSX/OpenXLSX/CMakeLists.txt:66 (check_cxx_source_compiles)"
     checks:
       - "Performing Test CHARCONV_RESULT"
     directories:
-      source: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xrm5xh"
-      binary: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xrm5xh"
+      source: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AGyXaU"
+      binary: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AGyXaU"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -564,33 +599,33 @@ events:
       variable: "CHARCONV_RESULT"
       cached: true
       stdout: |
-        Change Dir: '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xrm5xh'
+        Change Dir: '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AGyXaU'
         
-        Run Build Command(s): /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a48cc/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a48cc.dir/build.make CMakeFiles/cmTC_a48cc.dir/build
-        gmake[1]: Entering directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xrm5xh'
-        Building CXX object CMakeFiles/cmTC_a48cc.dir/src.cxx.o
-        /usr/bin/c++ -DCHARCONV_RESULT  -std=c++17 -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_a48cc.dir/src.cxx.o -c /home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xrm5xh/src.cxx
-        Linking CXX executable cmTC_a48cc
-        /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a48cc.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_a48cc.dir/src.cxx.o -o cmTC_a48cc 
-        gmake[1]: Leaving directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xrm5xh'
+        Run Build Command(s): /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f61ec/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f61ec.dir/build.make CMakeFiles/cmTC_f61ec.dir/build
+        gmake[1]: Entering directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AGyXaU'
+        Building CXX object CMakeFiles/cmTC_f61ec.dir/src.cxx.o
+        /usr/bin/c++ -DCHARCONV_RESULT  -std=c++17 -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_f61ec.dir/src.cxx.o -c /home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AGyXaU/src.cxx
+        Linking CXX executable cmTC_f61ec
+        /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f61ec.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_f61ec.dir/src.cxx.o -o cmTC_f61ec
+        gmake[1]: Leaving directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AGyXaU'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
       - "lib/OpenXLSX/OpenXLSX/CMakeLists.txt:198 (generate_export_header)"
     checks:
       - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
     directories:
-      source: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wNZcfQ"
-      binary: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wNZcfQ"
+      source: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AAPwOM"
+      binary: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AAPwOM"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -600,33 +635,33 @@ events:
       variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
       cached: true
       stdout: |
-        Change Dir: '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wNZcfQ'
+        Change Dir: '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AAPwOM'
         
-        Run Build Command(s): /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cd784/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_cd784.dir/build.make CMakeFiles/cmTC_cd784.dir/build
-        gmake[1]: Entering directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wNZcfQ'
-        Building CXX object CMakeFiles/cmTC_cd784.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -std=c++17 -fPIE -fdiagnostics-color=always   -fvisibility=hidden -o CMakeFiles/cmTC_cd784.dir/src.cxx.o -c /home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wNZcfQ/src.cxx
-        Linking CXX executable cmTC_cd784
-        /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd784.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_cd784.dir/src.cxx.o -o cmTC_cd784 
-        gmake[1]: Leaving directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wNZcfQ'
+        Run Build Command(s): /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7306f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7306f.dir/build.make CMakeFiles/cmTC_7306f.dir/build
+        gmake[1]: Entering directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AAPwOM'
+        Building CXX object CMakeFiles/cmTC_7306f.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -std=c++17 -fPIE -fdiagnostics-color=always   -fvisibility=hidden -o CMakeFiles/cmTC_7306f.dir/src.cxx.o -c /home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AAPwOM/src.cxx
+        Linking CXX executable cmTC_7306f
+        /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7306f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_7306f.dir/src.cxx.o -o cmTC_7306f
+        gmake[1]: Leaving directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AAPwOM'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
       - "lib/OpenXLSX/OpenXLSX/CMakeLists.txt:198 (generate_export_header)"
     checks:
       - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
     directories:
-      source: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f0rElB"
-      binary: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f0rElB"
+      source: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RpnTBv"
+      binary: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RpnTBv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -636,33 +671,33 @@ events:
       variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
       cached: true
       stdout: |
-        Change Dir: '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f0rElB'
+        Change Dir: '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RpnTBv'
         
-        Run Build Command(s): /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55035/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_55035.dir/build.make CMakeFiles/cmTC_55035.dir/build
-        gmake[1]: Entering directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f0rElB'
-        Building CXX object CMakeFiles/cmTC_55035.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -std=c++17 -fPIE -fdiagnostics-color=always   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_55035.dir/src.cxx.o -c /home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f0rElB/src.cxx
-        Linking CXX executable cmTC_55035
-        /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55035.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_55035.dir/src.cxx.o -o cmTC_55035 
-        gmake[1]: Leaving directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f0rElB'
+        Run Build Command(s): /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_42c5f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_42c5f.dir/build.make CMakeFiles/cmTC_42c5f.dir/build
+        gmake[1]: Entering directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RpnTBv'
+        Building CXX object CMakeFiles/cmTC_42c5f.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -std=c++17 -fPIE -fdiagnostics-color=always   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_42c5f.dir/src.cxx.o -c /home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RpnTBv/src.cxx
+        Linking CXX executable cmTC_42c5f
+        /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42c5f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_42c5f.dir/src.cxx.o -o cmTC_42c5f
+        gmake[1]: Leaving directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RpnTBv'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
-      - "/opt/clion-2023.3/bin/cmake/linux/x64/share/cmake-3.27/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckSourceCompiles.cmake:89 (cmake_check_source_compiles)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/snap/clion/353/bin/cmake/linux/x64/share/cmake-3.31/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
       - "lib/OpenXLSX/OpenXLSX/CMakeLists.txt:198 (generate_export_header)"
     checks:
       - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
     directories:
-      source: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky"
-      binary: "/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky"
+      source: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox"
+      binary: "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -672,24 +707,24 @@ events:
       variable: "COMPILER_HAS_DEPRECATED_ATTR"
       cached: true
       stdout: |
-        Change Dir: '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky'
+        Change Dir: '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox'
         
-        Run Build Command(s): /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8296d/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_8296d.dir/build.make CMakeFiles/cmTC_8296d.dir/build
-        gmake[1]: Entering directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky'
-        Building CXX object CMakeFiles/cmTC_8296d.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -std=c++17 -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_8296d.dir/src.cxx.o -c /home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky/src.cxx
-        \x1b[01m\x1b[K/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky/src.cxx:\x1b[m\x1b[K In function ‘\x1b[01m\x1b[Kint main()\x1b[m\x1b[K’:
-        \x1b[01m\x1b[K/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky/src.cxx:2:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K‘\x1b[01m\x1b[Kint somefunc()\x1b[m\x1b[K’ is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]
+        Run Build Command(s): /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b2ee6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b2ee6.dir/build.make CMakeFiles/cmTC_b2ee6.dir/build
+        gmake[1]: Entering directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox'
+        Building CXX object CMakeFiles/cmTC_b2ee6.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -std=c++17 -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_b2ee6.dir/src.cxx.o -c /home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox/src.cxx
+        \x1b[01m\x1b[K/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox/src.cxx:\x1b[m\x1b[K In function ‘\x1b[01m\x1b[Kint main()\x1b[m\x1b[K’:
+        \x1b[01m\x1b[K/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox/src.cxx:2:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K‘\x1b[01m\x1b[Kint somefunc()\x1b[m\x1b[K’ is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]
             2 |     int main() { return \x1b[01;35m\x1b[Ksomefunc()\x1b[m\x1b[K;}
               |                         \x1b[01;35m\x1b[K~~~~~~~~^~\x1b[m\x1b[K
-        \x1b[01m\x1b[K/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky/src.cxx:1:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here
+        \x1b[01m\x1b[K/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox/src.cxx:1:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here
             1 | __attribute__((__deprecated__)) int \x1b[01;36m\x1b[Ksomefunc\x1b[m\x1b[K() { return 0; }
               |                                     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K
-        Linking CXX executable cmTC_8296d
-        /opt/clion-2023.3/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8296d.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_8296d.dir/src.cxx.o -o cmTC_8296d 
-        gmake[1]: Leaving directory '/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-te6gky'
+        Linking CXX executable cmTC_b2ee6
+        /snap/clion/353/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2ee6.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_b2ee6.dir/src.cxx.o -o cmTC_b2ee6
+        gmake[1]: Leaving directory '/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s9UUox'
         
       exitCode: 0
 ...

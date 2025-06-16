@@ -450,6 +450,30 @@ src/Measurer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optHirrygated.dir/build.make CMakeFiles/optHirrygated.dir/src/Measurer.cpp.s
 .PHONY : src/Measurer.cpp.s
 
+src/RefinementHeuristic.o: src/RefinementHeuristic.cpp.o
+.PHONY : src/RefinementHeuristic.o
+
+# target to build an object file
+src/RefinementHeuristic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optHirrygated.dir/build.make CMakeFiles/optHirrygated.dir/src/RefinementHeuristic.cpp.o
+.PHONY : src/RefinementHeuristic.cpp.o
+
+src/RefinementHeuristic.i: src/RefinementHeuristic.cpp.i
+.PHONY : src/RefinementHeuristic.i
+
+# target to preprocess a source file
+src/RefinementHeuristic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optHirrygated.dir/build.make CMakeFiles/optHirrygated.dir/src/RefinementHeuristic.cpp.i
+.PHONY : src/RefinementHeuristic.cpp.i
+
+src/RefinementHeuristic.s: src/RefinementHeuristic.cpp.s
+.PHONY : src/RefinementHeuristic.s
+
+# target to generate assembly for a file
+src/RefinementHeuristic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optHirrygated.dir/build.make CMakeFiles/optHirrygated.dir/src/RefinementHeuristic.cpp.s
+.PHONY : src/RefinementHeuristic.cpp.s
+
 src/Solution.o: src/Solution.cpp.o
 .PHONY : src/Solution.o
 
@@ -562,6 +586,9 @@ help:
 	@echo "... src/Measurer.o"
 	@echo "... src/Measurer.i"
 	@echo "... src/Measurer.s"
+	@echo "... src/RefinementHeuristic.o"
+	@echo "... src/RefinementHeuristic.i"
+	@echo "... src/RefinementHeuristic.s"
 	@echo "... src/Solution.o"
 	@echo "... src/Solution.i"
 	@echo "... src/Solution.s"

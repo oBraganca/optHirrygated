@@ -1,20 +1,22 @@
 #ifndef MEASURER_HPP
 #define MEASURER_HPP
-#include <stdio.h>
-#include <iostream>
-#include <vector>
 
 #include "Instance.hpp"
 #include "Solution.hpp"
 
-using namespace std;
-namespace opthirrygated{
-    class Measurer{
+namespace opthirrygated {
+    class Measurer {
     private:
         Instance& inst;
+
     public:
         Measurer(Instance &instance);
-        virtual float evaluate(Solution& solution);
+
+        float evaluate(Solution& solution);
+        bool validation(Solution& solution);
+        bool validationRange(Solution& solution, int startIdx, int endIdx);
+        float evaluateRange(Solution& solution, int startIdx, int endIdx);
+        float evaluateLookahead(size_t day, float adi, int depth);
     };
 }
 

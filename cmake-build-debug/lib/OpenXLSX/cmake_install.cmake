@@ -1,4 +1,4 @@
-# Install script for directory: /home/obraganca/Documentos/IC/optHirrygated/lib/OpenXLSX
+# Install script for directory: /home/obraganca/Documents/IC/optHirrygated/lib/OpenXLSX
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,28 +37,34 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
+# Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/cmake_install.cmake")
+  include("/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/OpenXLSX/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Documentation/cmake_install.cmake")
+  include("/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Documentation/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/cmake_install.cmake")
+  include("/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Examples/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/obraganca/Documentos/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/cmake_install.cmake")
+  include("/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/Tests/cmake_install.cmake")
 endif()
 
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+if(CMAKE_INSTALL_LOCAL_ONLY)
+  file(WRITE "/home/obraganca/Documents/IC/optHirrygated/cmake-build-debug/lib/OpenXLSX/install_local_manifest.txt"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()
