@@ -2,5 +2,5 @@
 -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
 Doxygen need to be installed to generate the doxygen documentation
 -- Configuring done (0.0s)
--- Generating done (0.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: /home/obraganca/Documents/IC/optHirrygated/cmake-build-debug

@@ -16,7 +16,6 @@ namespace opthirrygated{
         virtual Solution executeB();
         virtual Solution executeC();
         virtual Solution executeLookAhead(int);
-        virtual Solution executeLookAheadBy(int, int, Solution&);
     };
 }
 

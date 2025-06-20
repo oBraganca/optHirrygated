@@ -17,8 +17,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/optHirrygated.dir/src/SolutionProcessor.cpp.o.d"
   "CMakeFiles/optHirrygated.dir/src/main.cpp.o"
   "CMakeFiles/optHirrygated.dir/src/main.cpp.o.d"
-  "CMakeFiles/optHirrygated.dir/src/test.cpp.o"
-  "CMakeFiles/optHirrygated.dir/src/test.cpp.o.d"
   "optHirrygated"
   "optHirrygated.pdb"
 )

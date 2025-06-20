@@ -60,8 +60,9 @@ int main() {
 
 
     RefinementHeuristic refinementHeuristic(instance);
-    //solution = refinementHeuristic.executeB(solution);
-    solution = refinementHeuristic.executeSA(solution);
+    solution = refinementHeuristic.executeA(solution);
+   // for(int i =0; i<106; i++)
+     //   solution = refinementHeuristic.executeMCTS(solution);
     cout << measurer.validation(solution);
 
     cout << "Total day evaluated: " << instance.getCicle().size() <<endl;
