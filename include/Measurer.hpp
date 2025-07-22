@@ -16,7 +16,6 @@ namespace opthirrygated {
         bool validation(Solution& solution);
         bool validationRange(Solution& solution, int startIdx, int endIdx);
         float evaluateRange(Solution& solution, int startIdx, int endIdx);
-        float evaluateLookahead(size_t day, float adi, int depth);
     };
 }
 

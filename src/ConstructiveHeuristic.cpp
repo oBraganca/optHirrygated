@@ -72,7 +72,7 @@ Solution ConstructiveHeuristic::executeB() {
       auxAdf = preAdf + inst.getLamp()[perc];
       float percCost = inst.getCost()[perc];
 
-      if (percCost < bestPrice && (auxAdf >= inst.getCad()[day] || auxAdf >= inst.getLc()[day])) {
+      if (percCost < bestPrice && auxAdf >= inst.getCad()[day]) {
         bestPrice = percCost;
         bestPerc = perc;
         adf = auxAdf;
@@ -98,8 +98,6 @@ Solution ConstructiveHeuristic::executeB() {
   return objSolution;
 }
 
-
-
 Solution ConstructiveHeuristic::executeC() {
  	Solution objSolution;
 	vector<int> solution;
@@ -114,18 +112,12 @@ Solution ConstructiveHeuristic::executeC() {
 
 	float preAdf = adi - inst.getEtc()[day] + inst.getPrec()[day];
 
-	if (preAdf == inst.getCad()[day] || preAdf >= inst.getLc()[day]) {
-    	solution.push_back(bestPerc);
-    	adi = preAdf;
-    	continue;
-  	}
-
 	bestPerc=-1;
     for (int perc : inst.getPerc()) {
       float auxAdf = preAdf + inst.getLamp()[perc];
       float percCost = inst.getCost()[perc];
 
-      if (percCost <= bestPrice && auxAdf <= inst.getCad()[day] && auxAdf >= inst.getLc()[day]) {
+      if (auxAdf <= inst.getCad()[day] && auxAdf >= inst.getLc()[day]) {
         bestPrice = percCost;
         bestPerc = perc;
         adf = auxAdf;
@@ -150,11 +142,11 @@ Solution ConstructiveHeuristic::executeC() {
   objSolution.setAdfSolution(std::move(adfSol));
   return objSolution;
 }
-Solution ConstructiveHeuristic::executeLookAhead(int lookaheadDepth) {
+
+Solution ConstructiveHeuristic::executeLookahead(int lookaheadDepth) {
     Solution objSolution;
     vector<int> solution;
     vector<float> adfSol;
-    Measurer measurer(inst);
 
     float adi = inst.getCad()[0], adf = 0;
     size_t numDays = inst.getCicle().size();
@@ -169,7 +161,7 @@ Solution ConstructiveHeuristic::executeLookAhead(int lookaheadDepth) {
 
             if (currAdf >= inst.getLc()[day]) {
                 float currCost = inst.getCost()[perc];
-                float futureCost = measurer.evaluateLookahead(day + 1, currAdf, lookaheadDepth - 1);
+                float futureCost = simulateLookahead(day + 1, currAdf, lookaheadDepth - 1);
                 float totalScore = currCost + futureCost;
 
                 if (totalScore < bestScore) {
@@ -197,3 +189,27 @@ Solution ConstructiveHeuristic::executeLookAhead(int lookaheadDepth) {
     return objSolution;
 }
 
+float ConstructiveHeuristic::simulateLookahead( size_t day, float adi, int depth) {
+    if (day >= inst.getCicle().size() || depth == 0)
+        return 0;
+
+    float preAdf = adi - inst.getEtc()[day] + inst.getPrec()[day];
+
+    float bestCost = FLT_MAX;
+
+    if (preAdf >= inst.getCad()[day]) {
+        bestCost = simulateLookahead(day + 1, preAdf, depth - 1);
+    }
+
+    for (int perc : inst.getPerc()) {
+        float auxAdf = preAdf + inst.getLamp()[perc];
+        float cost = inst.getCost()[perc];
+
+        if (auxAdf >= inst.getLc()[day]) {
+            float futureCost = simulateLookahead(day + 1, auxAdf, depth - 1);
+            bestCost = std::min(bestCost, cost + futureCost);
+        }
+    }
+
+    return bestCost;
+}

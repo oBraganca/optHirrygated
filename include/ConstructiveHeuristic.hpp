@@ -15,7 +15,8 @@ namespace opthirrygated{
         virtual Solution executeA();
         virtual Solution executeB();
         virtual Solution executeC();
-        virtual Solution executeLookAhead(int);
+        virtual Solution executeLookahead(int);
+        float simulateLookahead(size_t day, float adi, int depth);
     };
 }
 

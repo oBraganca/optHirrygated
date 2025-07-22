@@ -36,14 +36,13 @@ namespace opthirrygated {
         int mctsIters;
         int mctsRolloutDepth;
 
-        MCTSNode* expand(MCTSNode* node);
         void backup(MCTSNode* node, double reward);
 
         // Improved MCTS methods
-        MCTSNode* improvedTreePolicy(MCTSNode* node);
-        MCTSNode* improvedExpand(MCTSNode* node);
-        MCTSNode* improvedBestChild(MCTSNode* node, double c);
-        double improvedDefaultPolicy(const Solution& sol,
+        MCTSNode* treePolicy(MCTSNode* node);
+        MCTSNode* expand(MCTSNode* node);
+        MCTSNode* bestChild(MCTSNode* node, double c);
+        double defaultPolicy(const Solution& sol,
                                      unordered_map<int, int>& irrigationFreq,
                                      unordered_map<std::string, double>& patternRewards);
 
@@ -71,8 +70,10 @@ namespace opthirrygated {
                            double alpha = 0.97,
                            int iterPerT = 1000);
         Solution executeMCTS(const Solution &rootSolution);
-        bool propagate(Solution &solution, int d, float val);
+        void propagate(Solution &solution, int d, float val);
         bool isFeasible(const Solution &solution, int d) const;
+
+        bool recalculateADF(Solution &solution, int startDay);
     };
 
 } // namespace opthirrygated

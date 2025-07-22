@@ -106,16 +106,65 @@ namespace opthirrygated {
         return bestSolution;
     }
 
+    Solution RefinementHeuristic::executeSA(Solution &solution, double T, double T_min, double alpha, int iterPerT){
+        Measurer measurer(inst);
+        float C = measurer.evaluate(solution);
+        double T_initial = T;
+
+        int solutionSize = solution.getAdfSolutions().size();
+        if (solutionSize == 0) return solution; // Safety check
+
+        std::uniform_int_distribution<int> dayDist(0, solutionSize - 1);
+
+        while (T > T_min) {
+            for (int iter = 0; iter < iterPerT; ++iter) {
+                int d = dayDist(rng);
+
+                Solution candidate = solution;
+
+                double tempRatio = T / T_initial;
+                int maxPerturbation = std::max(1, static_cast<int>(inst.getPerc().size() * 0.1));
+                int perturbationLevel = std::max(1, static_cast<int>(maxPerturbation * tempRatio));
+
+                std::uniform_int_distribution<int> stepDist(-perturbationLevel, perturbationLevel);
+                int step = stepDist(rng);
+
+                int currentIdx = candidate.getSolution()[d];
+                int newIdx = std::max(0, std::min(currentIdx + step, static_cast<int>(inst.getPerc().size()) - 1));
+
+                if (newIdx == currentIdx) continue;
+
+                float oldAdf = candidate.getAdfSolutions()[d];
+                candidate.updateSolution(d, newIdx);
+                float newAdf = candidate.getAdfSolutions()[d];
+                float deltaAdf = newAdf - oldAdf;
+                propagate(candidate, d, deltaAdf);
+                if (!isFeasible(candidate, d)) continue;
+
+                float C2 = measurer.evaluate(candidate);
+                double delta = C2 - C;
+
+                if (delta < 0 || unif(rng) < std::exp(-delta / T)) {
+                    solution = std::move(candidate);
+                    C = C2;
+                }
+            }
+            T *= alpha;
+            //std::cout << "T=" << T << ", best cost=" << C << std::endl;
+        }
+
+        return solution;
+    }
     bool RefinementHeuristic::isFeasible(const Solution &solution, int d) const {
         auto adfSolutions = solution.getAdfSolutions();
         const auto& solutionVec = solution.getSolution();
 
         // Safety checks
-        if (d < 0 || adfSolutions.empty() || solutionVec.empty()) {
+        if (d < 0 || adfSolutions.empty() || solutionVec.empty() || adfSolutions.size() < d) {
             return false;
         }
 
-        float adi, adf;
+        float adi = adfSolutions[d-1], adf;
         if (d == 0) {
             if (inst.getCad().empty()) return false; // Safety check
             adi = inst.getCad()[0];
@@ -149,76 +198,26 @@ namespace opthirrygated {
         return true;
     }
 
-    bool RefinementHeuristic::propagate(Solution &solution, int d, float val) {
+    void RefinementHeuristic::propagate(Solution &solution, int d, float val) {
         std::vector<float> adfSolutions = solution.getAdfSolutions(); // Get copy, not reference
 
         if (d < 0 || d >= static_cast<int>(adfSolutions.size())) {
-            return false; // Safety check
+            return; // Safety check
         }
 
         for (int i = d; i < static_cast<int>(adfSolutions.size()); ++i) {
             float auxVal = val + adfSolutions[i];
             solution.updateAdfSolution(i, auxVal);
         }
-        return isFeasible(solution, d);
     }
 
-    Solution RefinementHeuristic::executeSA(Solution &solution, double T, double T_min, double alpha, int iterPerT){
-        Measurer measurer(inst);
-        float C = measurer.evaluate(solution);
-        double T_initial = T;
-
-        int solutionSize = solution.getAdfSolutions().size();
-        if (solutionSize == 0) return solution; // Safety check
-
-        std::uniform_int_distribution<int> dayDist(0, solutionSize - 1);
-
-        while (T > T_min) {
-            for (int iter = 0; iter < iterPerT; ++iter) {
-                int d = dayDist(rng);
-
-                Solution candidate = solution;
-
-                double tempRatio = T / T_initial;
-                int maxPerturbation = std::max(1, static_cast<int>(inst.getPerc().size() * 0.1));
-                int perturbationLevel = std::max(1, static_cast<int>(maxPerturbation * tempRatio));
-
-                std::uniform_int_distribution<int> stepDist(-perturbationLevel, perturbationLevel);
-                int step = stepDist(rng);
-
-                int currentIdx = candidate.getSolution()[d];
-                int newIdx = std::max(0, std::min(currentIdx + step, static_cast<int>(inst.getPerc().size()) - 1));
-
-                if (newIdx == currentIdx) continue;
-
-                float oldAdf = candidate.getAdfSolutions()[d];
-                candidate.updateSolution(d, newIdx);
-                float newAdf = candidate.getAdfSolutions()[d];
-                float deltaAdf = newAdf - oldAdf;
-
-                if (!propagate(candidate, d, deltaAdf)) continue;
-
-                float C2 = measurer.evaluate(candidate);
-                double delta = C2 - C;
-
-                if (delta < 0 || unif(rng) < std::exp(-delta / T)) {
-                    solution = std::move(candidate);
-                    C = C2;
-                }
-            }
-            T *= alpha;
-            ////std::cout << "T=" << T << ", best cost=" << C << std::endl;
-        }
-
-        return solution;
-    }
 
     Solution RefinementHeuristic::executeMCTS(const Solution &rootSolution) {
-        ////std::cout << "\n=== IMPROVED MCTS EXECUTION START ===" << std::endl;
+        //std::cout << "\n=== IMPROVED MCTS EXECUTION START ===" << std::endl;
 
         Measurer measurer(inst);
         float initialCost = measurer.evaluate(const_cast<Solution &>(rootSolution));
-        ////std::cout << "Initial solution cost: " << initialCost << std::endl;
+        //std::cout << "Initial solution cost: " << initialCost << std::endl;
 
         MCTSNode root(rootSolution, nullptr);
         Solution globalBest = rootSolution;
@@ -230,14 +229,14 @@ namespace opthirrygated {
 
         for (int it = 0; it < mctsIters; ++it) {
             if ((it + 1) % 500 == 0) {
-                ////std::cout << "Iteration " << (it + 1) << "/" << mctsIters
-                          //<< " - Best cost: " << globalBestCost << std::endl;
+                std::cout << "Iteration " << (it + 1) << "/" << mctsIters
+                << " - Best cost: " << globalBestCost << std::endl;
             }
 
-            MCTSNode* node = improvedTreePolicy(&root);
+            MCTSNode* node = treePolicy(&root);
             if (!node) break;
 
-            double reward = improvedDefaultPolicy(node->sol, irrigationFrequency, patternRewards);
+            double reward = defaultPolicy(node->sol, irrigationFrequency, patternRewards);
             backup(node, reward);
 
             // Update global best
@@ -267,15 +266,15 @@ namespace opthirrygated {
         return globalBest;
     }
 
-    MCTSNode* RefinementHeuristic::improvedTreePolicy(MCTSNode* node) {
+    MCTSNode* RefinementHeuristic::treePolicy(MCTSNode* node) {
         int maxDepth = 50;
         int depth = 0;
 
         while (node && depth < maxDepth) {
             if (!node->fullyExpanded) {
-                return improvedExpand(node);
+                return expand(node);
             } else {
-                node = improvedBestChild(node, mctsC);
+                node = bestChild(node, mctsC);
                 if (!node) break;
             }
             depth++;
@@ -283,7 +282,165 @@ namespace opthirrygated {
         return node;
     }
 
-    MCTSNode* RefinementHeuristic::improvedExpand(MCTSNode* node) {
+
+    bool RefinementHeuristic::isValidCandidate(const Solution& candidate, const Solution& original) {
+        // Check if candidate is different and feasible
+        const auto& candSol = candidate.getSolution();
+        const auto& origSol = original.getSolution();
+
+        bool isDifferent = false;
+        for (size_t i = 0; i < std::min(candSol.size(), origSol.size()); ++i) {
+            if (candSol[i] != origSol[i]) {
+                isDifferent = true;
+                break;
+            }
+        }
+
+        if (!isDifferent) return false;
+
+        // Quick feasibility check
+        return isFeasible(candidate, 0);
+    }
+
+    MCTSNode* RefinementHeuristic::bestChild(MCTSNode* node, double c) {
+        if (!node || node->children.empty()) return nullptr;
+
+        MCTSNode* best = nullptr;
+        double bestScore = -std::numeric_limits<double>::infinity();
+
+        for (auto& child : node->children) {
+            if (child->N > 0) {
+                double exploit = child->W / child->N;
+                double explore = c * std::sqrt(std::log(node->N) / child->N);
+                double score = exploit + explore;
+
+                if (score > bestScore) {
+                    bestScore = score;
+                    best = child.get();
+                }
+            }
+        }
+
+        return best;
+    }
+
+    double RefinementHeuristic::defaultPolicy(const Solution& sol,
+                                                      std::unordered_map<int, int>& irrigationFreq,
+                                                      std::unordered_map<std::string, double>& patternRewards) {
+        Solution sim = sol;
+        Measurer measurer(inst);
+        float initialCost = measurer.evaluate(sim);
+
+        // Focused rollout strategies
+        int D = sim.getAdfSolutions().size();
+        if (D == 0) return -initialCost;
+
+        // Strategy: Aggressive reduction of high irrigation
+        std::vector<int> highIrrigationDays;
+        for (int day = 0; day < D; ++day) {
+            if (sol.getSolution()[day] < 10 && sol.getSolution()[day] > 2 ) {
+                highIrrigationDays.push_back(day);
+            }
+        }
+
+        int improvements = 0;
+
+        //Max Moves: Minimal default = 20, Maximal = quantity of high irrigation perc
+        int maxMoves = std::min(mctsRolloutDepth, static_cast<int>(highIrrigationDays.size()));
+
+        for (int move = 0; move < maxMoves; ++move) {
+            if (highIrrigationDays.empty()) break;
+
+            // Select a day with high irrigation
+            std::uniform_int_distribution<int> dayDist(0, highIrrigationDays.size() - 1);
+            int dayIdx = dayDist(rng);
+            int day = highIrrigationDays[dayIdx];
+
+            // Try reducing to minimal irrigation levels
+            std::vector<int> reductionLevels = {0, 1, 2};
+            std::shuffle(reductionLevels.begin(), reductionLevels.end(), rng);
+
+            bool foundValidMove = false;
+            for (int newLevel : reductionLevels) {
+                Solution candidate = sim;
+                int oldLevel = candidate.getSolution()[day];
+
+                if (oldLevel == newLevel) continue;
+
+                candidate.updateSolution(day, newLevel);
+                float oldAdf = sim.getAdfSolutions()[day];
+                float newAdf = candidate.getAdfSolutions()[day];
+                float delta = newAdf - oldAdf;
+                propagate(candidate, day, delta);
+                if (isFeasible(candidate, day)) {
+                    float newCost = measurer.evaluate(candidate);
+                    if (newCost <= initialCost * 1.05) { // Allow slight cost increase for exploration
+                        sim = candidate;
+                        improvements++;
+                        irrigationFreq[newLevel]++;
+
+                        // Remove this day from high irrigation list
+                        highIrrigationDays.erase(highIrrigationDays.begin() + dayIdx);
+                        foundValidMove = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!foundValidMove) {
+                // Remove the day from consideration if no valid move found
+                highIrrigationDays.erase(highIrrigationDays.begin() + dayIdx);
+            }
+        }
+
+        float finalCost = measurer.evaluate(sim);
+
+        // Enhanced reward function
+        double costImprovement = (initialCost - finalCost) / initialCost;
+        double improvementBonus = improvements * 0.1;
+        double patternBonus = calculatePatternBonus(sim);
+
+        double reward = costImprovement + improvementBonus + patternBonus;
+
+        return reward;
+    }
+
+    double RefinementHeuristic::calculatePatternBonus(const Solution& sol) {
+        const auto& solution = sol.getSolution();
+        double bonus = 0.0;
+
+        // Bonus for consecutive low irrigation levels
+        int consecutiveLow = 0;
+        int maxConsecutiveLow = 0;
+
+        // Bonus for reducing high irrigation (10s)
+        int reducedHighCount = 0;
+
+        for (int day = 0; day < static_cast<int>(solution.size()); ++day) {
+            int level = solution[day];
+
+            // Count consecutive low irrigation (0, 1, 2)
+            if (level <= 2 || level == 10) {
+                consecutiveLow++;
+                maxConsecutiveLow = std::max(maxConsecutiveLow, consecutiveLow);
+            } else {
+                consecutiveLow = 0;
+            }
+
+            // Count reduced high irrigation
+            if (level <= 2 || level==10) {
+                reducedHighCount++;
+            }
+        }
+
+        // Bonuses
+        bonus += maxConsecutiveLow * 0.02; // Reward long sequences of low irrigation
+        bonus += (static_cast<double>(reducedHighCount) / solution.size()) * 0.5; // Reward overall reduction
+
+        return bonus;
+    }
+
+    MCTSNode* RefinementHeuristic::expand(MCTSNode* node) {
         if (!node) return nullptr;
 
         Solution s = node->sol;
@@ -361,8 +518,8 @@ namespace opthirrygated {
                                 float oldAdf = cand.getAdfSolutions()[day];
                                 float newAdf = temp.getAdfSolutions()[day];
                                 float delta = newAdf - oldAdf;
-
-                                if (propagate(temp, day, delta)) {
+                                propagate(temp, day, delta);
+                                if (isFeasible(temp, day)) {
                                     Measurer measurer(inst);
                                     float cost = measurer.evaluate(temp);
                                     if (cost < bestCost) {
@@ -401,219 +558,6 @@ namespace opthirrygated {
             }
         }
 
-        node->fullyExpanded = true;
-        return node;
-    }
-
-    bool RefinementHeuristic::isValidCandidate(const Solution& candidate, const Solution& original) {
-        // Check if candidate is different and feasible
-        const auto& candSol = candidate.getSolution();
-        const auto& origSol = original.getSolution();
-
-        bool isDifferent = false;
-        for (size_t i = 0; i < std::min(candSol.size(), origSol.size()); ++i) {
-            if (candSol[i] != origSol[i]) {
-                isDifferent = true;
-                break;
-            }
-        }
-
-        if (!isDifferent) return false;
-
-        // Quick feasibility check
-        return isFeasible(candidate, 0);
-    }
-
-    MCTSNode* RefinementHeuristic::improvedBestChild(MCTSNode* node, double c) {
-        if (!node || node->children.empty()) return nullptr;
-
-        MCTSNode* best = nullptr;
-        double bestScore = -std::numeric_limits<double>::infinity();
-
-        for (auto& child : node->children) {
-            if (child->N > 0) {
-                double exploit = child->W / child->N;
-                double explore = c * std::sqrt(std::log(node->N) / child->N);
-                double score = exploit + explore;
-
-                if (score > bestScore) {
-                    bestScore = score;
-                    best = child.get();
-                }
-            }
-        }
-
-        return best;
-    }
-
-    double RefinementHeuristic::improvedDefaultPolicy(const Solution& sol,
-                                                      std::unordered_map<int, int>& irrigationFreq,
-                                                      std::unordered_map<std::string, double>& patternRewards) {
-        Solution sim = sol;
-        Measurer measurer(inst);
-        float initialCost = measurer.evaluate(sim);
-
-        // Focused rollout strategies
-        int D = sim.getAdfSolutions().size();
-        if (D == 0) return -initialCost;
-
-        // Strategy: Aggressive reduction of high irrigation
-        std::vector<int> highIrrigationDays;
-        for (int day = 0; day < D; ++day) {
-            if (sol.getSolution()[day] < 10 && sol.getSolution()[day] > 2 ) {
-                highIrrigationDays.push_back(day);
-            }
-        }
-
-        int improvements = 0;
-        int maxMoves = std::min(mctsRolloutDepth, static_cast<int>(highIrrigationDays.size()));
-
-        for (int move = 0; move < maxMoves; ++move) {
-            if (highIrrigationDays.empty()) break;
-
-            // Select a day with high irrigation
-            std::uniform_int_distribution<int> dayDist(0, highIrrigationDays.size() - 1);
-            int dayIdx = dayDist(rng);
-            int day = highIrrigationDays[dayIdx];
-
-            // Try reducing to minimal irrigation levels
-            std::vector<int> reductionLevels = {0, 1, 2};
-            std::shuffle(reductionLevels.begin(), reductionLevels.end(), rng);
-
-            bool foundValidMove = false;
-            for (int newLevel : reductionLevels) {
-                Solution candidate = sim;
-                int oldLevel = candidate.getSolution()[day];
-
-                if (oldLevel == newLevel) continue;
-
-                candidate.updateSolution(day, newLevel);
-                float oldAdf = sim.getAdfSolutions()[day];
-                float newAdf = candidate.getAdfSolutions()[day];
-                float delta = newAdf - oldAdf;
-
-                if (propagate(candidate, day, delta)) {
-                    float newCost = measurer.evaluate(candidate);
-                    if (newCost <= initialCost * 1.05) { // Allow slight cost increase for exploration
-                        sim = candidate;
-                        improvements++;
-                        irrigationFreq[newLevel]++;
-
-                        // Remove this day from high irrigation list
-                        highIrrigationDays.erase(highIrrigationDays.begin() + dayIdx);
-                        foundValidMove = true;
-                        break;
-                    }
-                }
-            }
-
-            if (!foundValidMove) {
-                // Remove the day from consideration if no valid move found
-                highIrrigationDays.erase(highIrrigationDays.begin() + dayIdx);
-            }
-        }
-
-        float finalCost = measurer.evaluate(sim);
-
-        // Enhanced reward function
-        double costImprovement = (initialCost - finalCost) / initialCost;
-        double improvementBonus = improvements * 0.1;
-        double patternBonus = calculatePatternBonus(sim);
-
-        double reward = costImprovement + improvementBonus + patternBonus;
-
-        return reward;
-    }
-
-    double RefinementHeuristic::calculatePatternBonus(const Solution& sol) {
-        const auto& solution = sol.getSolution();
-        double bonus = 0.0;
-
-        // Bonus for consecutive low irrigation levels
-        int consecutiveLow = 0;
-        int maxConsecutiveLow = 0;
-
-        // Bonus for reducing high irrigation (10s)
-        int reducedHighCount = 0;
-
-        for (int day = 0; day < static_cast<int>(solution.size()); ++day) {
-            int level = solution[day];
-
-            // Count consecutive low irrigation (0, 1, 2)
-            if (level <= 2) {
-                consecutiveLow++;
-                maxConsecutiveLow = std::max(maxConsecutiveLow, consecutiveLow);
-            } else {
-                consecutiveLow = 0;
-            }
-
-            // Count reduced high irrigation
-            if (level < 10) {
-                reducedHighCount++;
-            }
-        }
-
-        // Bonuses
-        bonus += maxConsecutiveLow * 0.02; // Reward long sequences of low irrigation
-        bonus += (static_cast<double>(reducedHighCount) / solution.size()) * 0.5; // Reward overall reduction
-
-        return bonus;
-    }
-
-    MCTSNode* RefinementHeuristic::expand(MCTSNode* node) {
-        if (!node) return nullptr;
-
-        //std::cout << "    Expand: trying to create new child..." << std::endl;
-
-        Solution s = node->sol;
-        int D = s.getAdfSolutions().size();
-        if (D == 0) {
-            //std::cout << "    Expand: empty solution!" << std::endl;
-            return node;
-        }
-
-        std::uniform_int_distribution<int> dayDist(0, D-1);
-        int d = dayDist(rng);
-        int cur = s.getSolution()[d];
-        int maxIdx = static_cast<int>(inst.getPerc().size()) - 1;
-
-        if (maxIdx < 0) {
-            //std::cout << "    Expand: invalid maxIdx!" << std::endl;
-            return node;
-        }
-
-        std::uniform_int_distribution<int> stepDist(-1, 1);
-
-        for (int attempt = 0; attempt < 5; ++attempt) {
-            int ns = std::clamp(cur + stepDist(rng), 0, maxIdx);
-            //std::cout << "    Expand attempt " << attempt << ": day=" << d
-                      //<< ", current=" << cur << ", new=" << ns << std::endl;
-
-            if (ns != cur) {
-                Solution cand = s;
-                cand.updateSolution(d, ns);
-                float delta = cand.getAdfSolutions()[d] - node->sol.getAdfSolutions()[d];
-
-                //std::cout << "    Expand: testing feasibility with delta=" << delta << std::endl;
-
-                if (propagate(cand, d, delta)) {
-                    //std::cout << "    Expand: SUCCESS! Creating new child" << std::endl;
-                    auto child = std::make_unique<MCTSNode>(cand, node);
-                    node->children.push_back(std::move(child));
-                    if (node->children.size() >= 5) {
-                        node->fullyExpanded = true;
-                        //std::cout << "    Expand: Node now fully expanded (5 children)" << std::endl;
-                    }
-                    return node->children.back().get();
-                } else {
-                    //std::cout << "    Expand: move not feasible" << std::endl;
-                }
-            } else {
-                //std::cout << "    Expand: no change in solution" << std::endl;
-            }
-        }
-
-        //std::cout << "    Expand: No valid children found, marking as fully expanded" << std::endl;
         node->fullyExpanded = true;
         return node;
     }

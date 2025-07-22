@@ -56,14 +56,14 @@ int main() {
     cout << "---------------------------------------------------------------"<<endl;
 
     ConstructiveHeuristic constructiveHeuristic(instance);
-    solution = constructiveHeuristic.executeLookAhead(4);
-
+    //solution = constructiveHeuristic.executeLookahead(4);
+    solution = constructiveHeuristic.executeC();
 
     RefinementHeuristic refinementHeuristic(instance);
-    solution = refinementHeuristic.executeA(solution);
-   // for(int i =0; i<106; i++)
-     //   solution = refinementHeuristic.executeMCTS(solution);
-    cout << measurer.validation(solution);
+    //solution = refinementHeuristic.executeA(solution);
+    //for(int i =0; i<106; i++)
+        //solution = refinementHeuristic.executeA(solution);
+    cout << "Solution validation: " << (measurer.validation(solution) ? "is valid": "is invalid") << endl;
 
     cout << "Total day evaluated: " << instance.getCicle().size() <<endl;
     cout << "Solution Cost: R$" << measurer.evaluate(solution)<<endl;
